@@ -1,0 +1,129 @@
+section{
+    height: 900px;
+    display: flex;
+}
+
+
+/*하트 찾기 이름 */
+#title{
+    text-align: center;
+}
+
+/* 룰설명 타이틀 */
+#RuleDescription{
+    text-align: center;
+}
+
+/* 룰 설명 판 */
+#Rules{
+    background: #F9F7E8;
+    border: 1px solid black;
+}
+
+/* 카드 섞기 */
+#suffle{
+    width: 100%;
+    height: 40px;
+    background: #F9F7E8;
+    font-weight: bold;
+}
+
+
+/* 결과 판 */
+#result{
+    width: 100%;
+    height: 400px;
+    background: #F9F7E8;
+    border: 1px solid black;
+}
+
+#LCContent{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    margin-top: 30%;
+}
+
+#cardtable{
+    border: 0px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+#finishLog{
+    font-size: 20px;
+    color: red;
+}
+#cardimg{
+    width: 50px;
+    height: 100px;
+}
+tr{
+    width: 100%;
+} 
+
+td{
+    width: 25%;
+    height: 200px;
+}
+#leftContent{
+    width: 70%;
+    height: 900px;
+}
+
+.rightContent{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    height: 900px;
+}
+
+/* div구현 */
+.card {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 200px;
+
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back,.card-back1{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.card-front{
+    background-image: url(images/cardB.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-back, .card-back1{
+    transform: rotateY(180deg);
+}
+
+#fix{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
+    height: 100%;
+}

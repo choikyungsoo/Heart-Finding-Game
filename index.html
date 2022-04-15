@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>하트 찾기 게임</title>
+    <link type="text/css" rel="stylesheet" href="indexCss.css">
+    <script src="indexJs.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title"><span style="color: red;">하트</span> 찾기 게임</h1>
+    </header>
+    <section>
+        <div id="leftContent">
+            <div id="fix">
+            </div>
+        </div>
+
+        <div class="rightContent">
+            <div id="Rules">
+                <br>
+                <h3 id="RuleDescription">룰 설명</h3>
+                <p style="margin-left: 20px;">
+                    1. 랜덤하게 섞인 16개의 그림카드가 나타난다<br>
+                    2. 한번 오픈된 카드는 다시 뒤집히지 않는다<br>
+                    3. 다른 카드 클릭시 실패로 처리된다<br>
+                    4. 15번의 기회가 주어진다.<br>
+                    5. 하트를 찾은 경우, 16개의 그림카드에 하트가 나타난다<br><br>
+                </p>
+            </div><br>
+            <div id="result">
+                000님 반갑습니다. 게임을 시작하기 위해 아래의 하트 위치 변경 버튼을 눌려주세요
+            </div><br>
+            <input id="suffle" type="button" value="하트 위치 변경" onclick="cardShuffle()">
+        </div>
+    </section>
+
+</body>
+
+</html>

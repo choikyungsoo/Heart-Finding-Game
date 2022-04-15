@@ -29,3 +29,5 @@
 
 <하트 위치 변경> 버튼 클릭 시 게임 재시작
 </pre>
+
+[하트 찾기 게임.pdf](https://github.com/choikyungsoo/Heart-Finding-Game/files/8493339/default.pdf)
